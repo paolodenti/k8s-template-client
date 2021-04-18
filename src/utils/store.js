@@ -6,6 +6,7 @@ export const store = Vue.observable({
 
 export const mutations = {
     setPosts(posts) {
+        store.posts.splice(0);
         store.posts.push(...posts);
     },
     addPost(post) {
