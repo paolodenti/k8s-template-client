@@ -35,7 +35,7 @@ export default {
     methods: {
         deletePost(post) {
             axios
-                .delete(`${config.restApiUrl}/posts/${post._id}`)
+                .delete(`${config.restApiUrl}/api/posts/${post._id}`)
                 .then(() => {
                     mutations.delPost(post);
                 })
@@ -46,7 +46,7 @@ export default {
     },
     mounted() {
         axios
-            .get(`${config.restApiUrl}/posts`)
+            .get(`${config.restApiUrl}/api/posts`)
             .then(response => {
                 mutations.setPosts(response.data);
             })

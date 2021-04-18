@@ -46,11 +46,11 @@ export default {
         onSubmit(event) {
             event.preventDefault();
             axios
-                .post(`${config.restApiUrl}/posts`, this.form)
-                .then(function(response) {
+                .post(`${config.restApiUrl}/api/posts`, this.form)
+                .then(function (response) {
                     mutations.addPost(response.data);
                 })
-                .catch(function(error) {
+                .catch(function (error) {
                     console.log(error);
                 });
         },
