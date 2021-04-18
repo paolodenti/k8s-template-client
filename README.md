@@ -4,7 +4,7 @@ Vue.js SPA frontend template for [https://github.com/paolodenti/k8s-template](ht
 
 ## Environment variables
 
-`VUE_APP_REST_API`: for local development, rest api server, defaults to empty string.
+`VUE_APP_REST_API`: http base url for rest api. Used for local development, defaults to empty string.
 
 ## Project setup
 
